@@ -1,0 +1,31 @@
+{
+    "name": "zoilomora/doctrine-dbal-msaccess",
+    "description": "This package helps you to manage Microsoft Access DB by ODBC Connection.",
+    "version": "1.0.0",
+    "type": "library",
+    "keywords": [
+        "doctrine",
+        "dbal",
+        "microsoft-access"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ZoiloMora\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ZoiloMora\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "ext-pdo": "*",
+        "ext-pdo_odbc": "*",
+        "doctrine/dbal": "^2.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    }
+}
