@@ -18,7 +18,7 @@ class Driver implements \Doctrine\DBAL\Driver
     {
         try {
             $conn = new MsAccessConnection(
-                $this->constructPdoDsn($params),
+                $this->constructPdoDsn($driverOptions),
                 $username,
                 $password,
                 $driverOptions
