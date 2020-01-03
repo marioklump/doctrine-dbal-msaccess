@@ -17,6 +17,7 @@ class MsAccessPlatform extends SQLServerPlatform
 
     /**
      * {@inheritDoc}
+     * @see https://github.com/doctrine/dbal/blob/master/lib/Doctrine/DBAL/Platforms/SQLServerPlatform.php
      */
     protected function doModifyLimitQuery($query, $limit, $offset = null)
     {
@@ -58,6 +59,7 @@ class MsAccessPlatform extends SQLServerPlatform
 
     /**
      * {@inheritDoc}
+     * @see https://github.com/doctrine/dbal/blob/master/lib/Doctrine/DBAL/Platforms/SQLServerPlatform.php
      */
     private function scrubInnerOrderBy($query)
     {
@@ -104,6 +106,7 @@ class MsAccessPlatform extends SQLServerPlatform
 
     /**
      * {@inheritDoc}
+     * @see https://github.com/doctrine/dbal/blob/master/lib/Doctrine/DBAL/Platforms/SQLServerPlatform.php
      */
     private function isOrderByInTopNSubquery($query, $currentPosition)
     {
