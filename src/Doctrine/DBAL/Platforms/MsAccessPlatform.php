@@ -140,4 +140,28 @@ class MsAccessPlatform extends SQLServerPlatform
         // TODO Build sql to get list of columns.
         return [];
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getDateTimeFormatString()
+    {
+        return 'Y-m-d H:i';
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getDateFormatString()
+    {
+        return 'Y-m-d';
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getTimeFormatString()
+    {
+        return 'H:i:s';
+    }
 }
